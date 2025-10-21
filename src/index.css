@@ -24,6 +24,8 @@ nav{
 
   background-color: darkslategray;
   min-height: 70px;
+
+  z-index: 100;
 }
 
 nav div{
@@ -45,63 +47,44 @@ nav div:last-of-type{
 
 /*Hero*/
 
-.hero, .hero-top, .hero-bottom{
-  display: flex;
-}
-
 .hero{
-  flex-direction: column;
-  gap: 2px;
+  position: relative;
+  min-height: 300px;
 }
 
-.hero-1, .hero-3{
-  min-width: 20%;
+.hero-text{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
 }
 
-.hero-top .hero-2, .hero-bottom .hero-2{
-  flex-grow: 1;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-1{
-  align-self: self-end;
-}
-
-.hero-top .hero-2{
-  padding-top: 42px;
-  padding-bottom: 42px;
-}
-
-hr{
-  margin-top: 2px;
-  margin-bottom: 2px;
-  width: 50%;
+.hero-text p{
+  text-align: center;
 }
 
 .icons{
   width: 21px;
   height: 63px;
   background-color: black;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-bottom{
-  height: 42px;
 }
 
 .vl{
   height: 42px;
   width: 2px;
   background-color: black;
+}
 
-  margin-left: auto;
-  margin-right: auto;
+.hero-scrollbox{
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .hero-scroll{
