@@ -10,7 +10,7 @@ const Navbar = () => {
         <div>
             <p>About</p>
             <p>Projects</p>
-            <p>Contacts</p>
+            <p>Contact</p>
             <p>Resume</p>
         </div>
     </nav>
