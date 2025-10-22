@@ -16,6 +16,9 @@ body{
 /*Navbar*/
 
 nav{
+  position: sticky;
+  top: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,22 +60,35 @@ nav div:last-of-type{
   left: 50%;
   top:50%;
   transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-text p{
   text-align: center;
 }
 
-.icons{
-  width: 21px;
-  height: 63px;
+.hero-hl{
   background-color: black;
+  height: 2px;
+  width: 0px;
+
+  animation-name: growWidth;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 
-.vl{
-  height: 42px;
-  width: 2px;
-  background-color: black;
+@keyframes growWidth {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .hero-scrollbox{
@@ -90,6 +106,32 @@ nav div:last-of-type{
 .hero-scroll{
   width: 42px;
   height: 21px;
+  background-color: black;
+}
+
+.hero-side{
+  position: absolute;
+  height: 100%;
+  left: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 2px;
+}
+
+.hero-icon-1, .hero-icon-2{
+  width: 21px;
+  height: 21px;
+  background-color: black;
+}
+
+.vl{
+  height: 42px;
+  width: 2px;
   background-color: black;
 }
 
