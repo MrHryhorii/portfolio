@@ -48,11 +48,16 @@ nav div:last-of-type{
   justify-content: end;
 }
 
+/*Sections*/
+section{
+  padding: 10px;
+  min-height: 300px;
+}
+
 /*Hero*/
 
 .hero{
   position: relative;
-  min-height: 300px;
 }
 
 .hero-text{
@@ -135,3 +140,18 @@ nav div:last-of-type{
   background-color: black;
 }
 
+/* About */
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.aabb-1{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
