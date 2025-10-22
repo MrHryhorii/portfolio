@@ -52,6 +52,7 @@ nav div:last-of-type{
 section{
   padding: 10px;
   min-height: 300px;
+  overflow: hidden;
 }
 
 /*Hero*/
@@ -154,4 +155,24 @@ section{
   width: 200px;
   height: 200px;
   background-color: black;
+}
+
+/* Projects */
+.aabb-2{
+  width: 400px;
+  height: 200px;
+  background-color: black;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projects-flex{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

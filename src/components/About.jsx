@@ -6,7 +6,7 @@ const About = () => {
     <section className='about'>
 
       <div className='about-text'>
-        <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false}>
+        <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
         <article>
           <h1>About Me</h1>
           <p>👋 Hello My name is Jack Parsons and I am a fourth-year Computer Science Student attending the University of Alberta.</p>
