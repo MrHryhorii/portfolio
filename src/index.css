@@ -164,7 +164,7 @@ section{
   background-color: black;
 }
 
-.projects{
+.projects, .project-2, .project-3{
   display: flex;
   flex-direction: column;
   justify-content: center;
