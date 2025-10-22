@@ -176,3 +176,35 @@ section{
   align-items: center;
   gap: 10px;
 }
+
+/*Footer*/
+.footer{
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-center{
+  display: flex;
+  gap: 2px;
+}
+
+.footer-line{
+  height: 2px;
+  min-width: 20svw;
+  width: 100%;
+  background-color: black;
+}
+
+.footer-left, .footer-right{
+  flex-grow: 0.4;
+}

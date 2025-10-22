@@ -4,6 +4,7 @@ import Hero from './Hero.jsx'
 import About from './About.jsx'
 import Projects from './Projects.jsx'
 import Contact from './Contact.jsx'
+import Footer from './Footer.jsx'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </>
   )
 }
