@@ -22,7 +22,7 @@
   height: 2px;
   min-width: 20svw;
   width: 100%;
-  background-color: black;
+  background-color: var(--border);
 }
 
 .footerLeft, .footerRight{
@@ -32,5 +32,5 @@
 .heroIcon1, .heroIcon2{
   width: 21px;
   height: 21px;
-  background-color: black;
+  background-color: var(--border);
 }

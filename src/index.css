@@ -81,6 +81,9 @@
 
 body{
   height: 100svh;
+
+  font-size: var(--body-font);
+  background-color: var(--bg);
 }
 
 #root{
@@ -88,6 +91,31 @@ body{
   flex-direction: column;
 }
 
+p{
+  color: var(--subtext);
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight);
+}
+
+h1, h2, h3{
+  color: var(--text);
+  font-family: var(--extra-font-family);
+}
+
+h1{
+  font-weight: var(--h1-font-weight);
+  font-size: var(--h1-font-size);
+}
+
+h2{
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
+}
+
+h3{
+  font-weight: var(--h3-font-weight);
+  font-size: var(--h3-font-size);
+}
 
 /*Sections*/
 section{
@@ -98,4 +126,9 @@ section{
   max-width: 1200px;
   width: 100%;
   align-self: center;
+
+  border-radius: var(--section-radius);
+  border-color: var(--border);
+  border-width: 2px;
+  padding: var(--section-padding);
 }

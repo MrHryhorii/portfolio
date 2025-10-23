@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.nav}`}>
         <div className={`${styles.navDiv}`}>
-            <p>LOGO</p>
+            <p>Logo</p>
         </div>
         <div className={`${styles.navDiv} ${styles.navDivLast}`}>
             <p>About</p>

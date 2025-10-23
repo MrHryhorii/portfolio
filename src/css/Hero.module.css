@@ -14,7 +14,7 @@
 }
 
 .heroHl{
-  background-color: black;
+  background-color: var(--border);
   height: 2px;
   width: 0px;
 
@@ -49,7 +49,7 @@
 .heroScroll{
   width: 42px;
   height: 21px;
-  background-color: black;
+  background-color: var(--border);
 }
 
 .heroSide{
@@ -69,11 +69,11 @@
 .heroIcon1, .heroIcon2{
   width: 21px;
   height: 21px;
-  background-color: black;
+  background-color: var(--border);
 }
 
 .vl{
   height: 42px;
   width: 2px;
-  background-color: black;
+  background-color: var(--border);
 }

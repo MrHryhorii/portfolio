@@ -8,8 +8,11 @@
 
   flex-wrap: wrap;
 
-  background-color: darkslategray;
-  min-height: 70px;
+  background-color: rgba(0,0,0,0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  min-height: 49px;
 
   z-index: 100;
 }
@@ -29,4 +32,14 @@
 
 .navDivLast{
   justify-content: end;
+}
+
+/*Colors*/
+
+.nav div:first-of-type p{
+  color: var(--text);
+}
+
+.nav div:last-of-type p{
+  color: var(--primary);
 }
