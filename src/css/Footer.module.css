@@ -1,0 +1,36 @@
+.footer{
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footerRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerCenter{
+  display: flex;
+  gap: 2px;
+}
+
+.footerLine{
+  height: 2px;
+  min-width: 20svw;
+  width: 100%;
+  background-color: black;
+}
+
+.footerLeft, .footerRight{
+  flex-grow: 0.4;
+}
+
+.heroIcon1, .heroIcon2{
+  width: 21px;
+  height: 21px;
+  background-color: black;
+}
