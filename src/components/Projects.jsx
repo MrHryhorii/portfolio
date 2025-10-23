@@ -1,16 +1,17 @@
 import React from 'react'
+import styles from '../css/Projects.module.css';
 import BigSlide from './BigSlide'
 
 const Projects = () => {
   return (
     <>
-    <section className='projects'>
+    <section className={`${styles.projects}`}>
       <h1>Projects</h1>
-      <div className='projects-flex'>
-        <div className='projects-img'>
-          <div className='aabb-2'></div>
+      <div className={`${styles.projectsFlex}`}>
+        <div>
+          <div className={`${styles.aabb2}`}></div>
         </div>
-        <div className='projects-text'>
+        <div>
           <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article>
               <h2>Health Fusion</h2>
@@ -30,9 +31,9 @@ const Projects = () => {
 
     </section>
 
-    <section className='project-2'>
-      <div className='projects-flex'>
-        <div className='projects-text'>
+    <section className={`${styles.project2}`}>
+      <div className={`${styles.projectsFlex}`}>
+        <div>
           <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article>
               <h2>Covid-19 Discord Bot</h2>
@@ -44,19 +45,19 @@ const Projects = () => {
             </article>
           </BigSlide>
         </div>
-        <div className='projects-img'>
-          <div className='aabb-2'></div>
+        <div>
+          <div className={`${styles.aabb2}`}></div>
         </div>
       </div> 
 
     </section>
 
-    <section className='project-3'>
-      <div className='projects-flex'>
-        <div className='projects-img'>
-          <div className='aabb-2'></div>
+    <section className={`${styles.project3}`}>
+      <div className={`${styles.projectsFlex}`}>
+        <div>
+          <div className={`${styles.aabb2}`}></div>
         </div>
-        <div className='projects-text'>
+        <div>
           <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article>
               <h2>Flavour Flow</h2>
