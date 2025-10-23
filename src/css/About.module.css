@@ -1,0 +1,13 @@
+.about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.aabb1{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}

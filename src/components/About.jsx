@@ -1,11 +1,12 @@
 import React from 'react'
+import styles from '../css/About.module.css';
 import BigSlide from './BigSlide'
 
 const About = () => {
   return (
-    <section className='about'>
+    <section className={`${styles.about}`}>
 
-      <div className='about-text'>
+      <div>
         <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
         <article>
           <h1>About Me</h1>
@@ -17,8 +18,8 @@ const About = () => {
         </article>
         </BigSlide>
       </div>
-      <div className='about-img'>
-        <div className='aabb-1'></div>
+      <div>
+        <div className={`${styles.aabb1}`}></div>
       </div>
 
     </section>
