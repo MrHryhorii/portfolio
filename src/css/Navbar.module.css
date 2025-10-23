@@ -1,0 +1,32 @@
+.nav{
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  background-color: darkslategray;
+  min-height: 70px;
+
+  z-index: 100;
+}
+
+.navDiv{
+  height: 100%;
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  margin: 16px;
+  gap: 42px;
+}
+
+.navDivLast{
+  justify-content: end;
+}

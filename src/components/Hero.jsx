@@ -1,34 +1,35 @@
 import React from 'react'
+import styles from '../css/Hero.module.css';
 import BigSlide from './BigSlide'
 
 const Hero = () => {
   return (
-    <section className='hero'>
+    <section className={`${styles.hero}`}>
 
-      <div className='hero-text'>
+      <div className={`${styles.heroText}`}>
         <p>Hi, my name is</p>
         <p>Jack Parsons.</p>
         <p>I like to code.</p>
-        <div className='hero-hl'></div>
+        <div className={`${styles.heroHl}`}></div>
         <p>Computer Science</p>
         <p>Student</p>
       </div>
 
-      <div className='hero-scrollbox'>
+      <div className={`${styles.heroScrollbox}`}>
         <BigSlide dir="down" distance={650} duration={3000} cascade damping={0.14} triggerOnce>
-          <div className='hero-scroll'></div>
+          <div className={`${styles.heroScroll}`}></div>
         </BigSlide>
       </div>
 
-      <div className='hero-side'>
+      <div className={`${styles.heroSide}`}>
         <BigSlide dir="down" distance={750} duration={3000} cascade damping={0.14} triggerOnce>
-          <div className='hero-icon-1'></div>
+          <div className={`${styles.heroIcon1}`}></div>
         </BigSlide>
         <BigSlide dir="down" distance={350} duration={3000} cascade damping={0.14} triggerOnce>
-          <div className='hero-icon-2'></div>
+          <div className={`${styles.heroIcon2}`}></div>
         </BigSlide>
 
-        <div className='vl'></div>
+        <div className={`${styles.vl}`}></div>
       </div>
 
     </section>
