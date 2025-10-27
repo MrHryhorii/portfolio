@@ -21,7 +21,7 @@ const Projects = () => {
                 their medication historyfrom the past or look to the future and see what they need to take.
                 Finally, users are also given a map view so that they have no problem finding any nearby pharmacies
                 or hostiptals if needed.</p>
-              <p>Python · Discord API · Johns Hopkins API</p>
+              <div className={`${styles.tags}`}><span>Python</span><span>Discord API</span><span>Johns Hopkins API</span></div>
               <p>Source Code</p>
             </article>
           </BigSlide>
@@ -38,7 +38,7 @@ const Projects = () => {
               <h3>Covid-19 Discord Bot</h3>
               <p>A hackathon project for HackED 2021. Using a variety of commands you can retrieve different
                 Covid-19 data including cases, test, and vaccines.</p>
-              <p>Python · Discord API · Johns Hopkins API</p>
+              <div className={`${styles.tags}`}><span>Python</span><span>Discord API</span><span>Johns Hopkins API</span></div>
               <p>Source Code</p>
             </article>
           </BigSlide>
@@ -64,7 +64,7 @@ const Projects = () => {
                 The recipe generator maximizes given ingredients and minimizes any missing ingredients,
                 using the Spoonacular API.
               </p>
-              <p>Python · Discord API · Johns Hopkins API</p>
+              <div className={`${styles.tags}`}><span>Python</span><span>Discord API</span><span>Johns Hopkins API</span></div>
               <p>Source Code</p>
             </article>
           </BigSlide>

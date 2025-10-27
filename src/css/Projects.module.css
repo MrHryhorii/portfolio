@@ -43,3 +43,38 @@
   flex-direction: column;
   gap: var(--article-gap);
 }
+
+.tags{
+  display: flex;
+  gap: var(--tags-gap);
+  padding-top: var(--tags-padding-top);
+}
+
+.tags span{
+  background-color: antiquewhite;
+  padding: var(--badge-padding);
+  border-radius: var(--badge-radius);
+  font-size: var(--small-font);
+  font-weight: var(--font-weight);
+}
+
+.tags span{
+  background-color: var(--badge-2);
+  border-color: var(--badge-2-border);
+  border-style: solid;
+  border-width: 2px;
+}
+
+.tags span:first-of-type{
+  background-color: var(--border);
+  border-color: var(--border);
+}
+
+.tags span:last-of-type{
+  background-color: var(--badge-3);
+  border-color: var(--badge-3-border);
+}
+
+span{
+  color: var(--text);
+}
