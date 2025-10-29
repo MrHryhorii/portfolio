@@ -134,3 +134,54 @@ section{
   border-width: 2px;
   padding: var(--section-padding);
 }
+
+
+.blob-container {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.7;
+}
+
+.blob1 {
+    width: 400px;
+    height: 400px;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #ff3cac, transparent 30%);
+}
+
+.blob2 {
+    width: 500px;
+    height: 500px;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #CA79FF, transparent 70%);
+}
+
+.blob3 {
+    width: 600px;
+    height: 600px;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #00D2FD, transparent 50%);
+}
+
+.blob4 {
+    width: 400px;
+    height: 400px;
+    top: 100%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #ff3cac, transparent 30%);
+}
