@@ -1,0 +1,98 @@
+.contact{
+    border-style: solid;
+}
+
+.formComponent{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm h2{
+    margin-bottom: 14px;
+}
+
+p, label{
+    color: var(--subtext);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--h3-font-size);
+}
+
+label{
+    font-size: var(--small-font);
+    font-weight: var(--label-font-weight);
+    height: 23px;
+    margin-bottom: 7px;
+}
+
+#send{
+    margin-top: 24px;
+}
+
+input, textarea{
+    padding: var(--form-padding);
+    font-size: var(--small-font);
+    border-radius: var(--form-radius);
+}
+
+.message{
+    resize: none;
+    height: 93px;
+}
+
+button{
+    width: fit-content;
+    padding: 13px 17px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 16px;
+
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+
+button:hover{
+    transform: translateY(-1px);
+}
+
+button:active{
+    transform: translateY(0px);
+}
+
+input, textarea{
+    color: var(--inputtext);
+    background-color: var(--surface);
+
+    border: none;
+    transition: all 0.2s ease-in-out;
+
+    font-family: var(--body-font);
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+.send{
+    box-shadow: var(--btn-shadow);
+    border-color: var(--btn-border);
+    border-style: solid;
+    border-width: 2px;
+
+    color: var(--text);
+
+    background: linear-gradient(var(--btn-normal-from), var(--btn-normal-to));
+    transition: all 0.2s ease;
+}
+
+.send:hover{
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+.send:active{
+    transform: translateY(0px);
+}

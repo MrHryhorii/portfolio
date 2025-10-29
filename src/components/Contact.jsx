@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { createMailToLink } from "@slalombuild/react-mailto";
+import styles from '../css/Contact.module.css';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -17,22 +18,38 @@ const Contact = () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <input
-        type="text"
-        placeholder="Your name (optional)"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <textarea
-        placeholder="Write your message..."
-        rows={6}
-        value={msg}
-        onChange={(e) => setMsg(e.target.value)}
-        required
-      />
-      <button type="submit">Send Email</button>
-    </form>
+    <section className={`${styles.contact} ${styles.contactForm}`}>
+      <h2>Contact form</h2>
+      <form onSubmit={onSubmit}>
+        <div className={`${styles.formComponent}`}>
+          <label htmlFor="name-input">Name</label>
+          <input
+            id="name-input"
+            name="name"
+            type="text"
+            placeholder="Your name (optional)"
+            autoComplete="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className={`${styles.formComponent}`}>
+          <label htmlFor="msg-texarea">Message</label>
+          <textarea
+            className={`${styles.message}`}
+            id="msg-texarea"
+            name="msg"
+            placeholder="Write your message..."
+            rows={6}
+            autoComplete="off"
+            value={msg}
+            onChange={(e) => setMsg(e.target.value)}
+            required
+          />
+        </div>
+        <button className={`${styles.send}`} type="submit">Send Email</button>
+      </form>
+    </section>
   );
 }
 

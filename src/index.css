@@ -98,14 +98,16 @@ p{
   font-weight: var(--font-weight);
 }
 
-h1, h2, h3{
+h2, h3{
   color: var(--text);
-  font-family: var(--extra-font-family);
+  font-family: var(--body-font-family);
 }
 
 h1{
+  color: var(--text);
   font-weight: var(--h1-font-weight);
   font-size: var(--h1-font-size);
+  font-family: var(--extra-font-family);
 }
 
 h2{
