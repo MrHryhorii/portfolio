@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { createMailToLink } from "@slalombuild/react-mailto";
+import BigSlide from './BigSlide'
 import styles from '../css/Contact.module.css';
 
 const Contact = () => {
@@ -19,6 +20,7 @@ const Contact = () => {
 
   return (
     <section className={`${styles.contact} ${styles.contactForm}`}>
+      <BigSlide dir="up" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
       <h2>Contact form</h2>
       <form onSubmit={onSubmit}>
         <div className={`${styles.formComponent}`}>
@@ -49,6 +51,7 @@ const Contact = () => {
         </div>
         <button className={`${styles.send}`} type="submit">Send Email</button>
       </form>
+      </BigSlide>
     </section>
   );
 }
