@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../css/Hero.module.css';
 import BigSlide from './BigSlide'
+import arrow from '../assets/arrow_down.svg'
 
 const Hero = () => {
   return (
@@ -17,7 +18,8 @@ const Hero = () => {
 
       <div className={`${styles.heroScrollbox}`}>
         <BigSlide dir="down" distance={650} duration={3000} cascade damping={0.14} triggerOnce>
-          <div className={`${styles.heroScroll}`}></div>
+          {/*<div className={`${styles.heroScroll}`}></div>*/}
+          <img src={arrow} alt="" />
         </BigSlide>
       </div>
 
