@@ -1,6 +1,6 @@
 .hero{
   position: relative;
-  min-height: 675px;
+  height: calc(100vh - 75px)
 }
 
 .heroText{

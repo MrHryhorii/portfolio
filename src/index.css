@@ -188,6 +188,9 @@ section{
 
 /* Navigation */
 #about, #projects, #contact {
-    scroll-margin-top: 64px;
+  scroll-margin-top: 64px;
+}
+#hero {
+  scroll-margin-top: 69px;
 }
 
