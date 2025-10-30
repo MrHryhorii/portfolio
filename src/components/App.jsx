@@ -7,11 +7,17 @@ import Contact from './Contact.jsx'
 import Footer from './Footer.jsx'
 
 function App() {
-  //const [count, setCount] = useState(0)
+
+  const scrollToId = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
-      <Navbar />
+      <Navbar scrollToId={scrollToId}/>
       <Hero />
       <About />
       <Projects />
@@ -19,6 +25,7 @@ function App() {
       <Footer />
     </>
   )
+
 }
 
 export default App

@@ -4,7 +4,7 @@ import BigSlide from './BigSlide'
 
 const Projects = () => {
   return (
-    <div className={`${styles.projectList}`}>
+    <div className={`${styles.projectList}`} id="projects">
     <section className={`${styles.projects}`}>
       <h2>Projects</h2>
       <div className={`${styles.projectsFlex}`}>

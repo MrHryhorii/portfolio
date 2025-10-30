@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={`${styles.contact} ${styles.contactForm}`}>
+    <section className={`${styles.contact} ${styles.contactForm}`} id="contact">
       <BigSlide dir="up" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
       <h2>Contact form</h2>
       <form onSubmit={onSubmit}>

@@ -4,7 +4,7 @@ import BigSlide from './BigSlide'
 
 const Hero = () => {
   return (
-    <section className={`${styles.hero}`}>
+    <section className={`${styles.hero}`} id='hero'>
 
       <div className={`${styles.heroText}`}>
         <p>Hi, my name is</p>

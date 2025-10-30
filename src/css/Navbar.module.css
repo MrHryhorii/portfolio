@@ -43,3 +43,23 @@
 .nav div:last-of-type p{
   color: var(--primary);
 }
+
+/* links */
+.navDiv a {
+  text-decoration: underline transparent;
+
+  text-shadow: 0 0 0 transparent;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+a:hover {
+  text-shadow: 
+    0 0 5px var(--primary),
+    0 0 10px var(--primary),
+    0 0 20px var(--primary),
+    0 0 40px var(--primary),
+    0 0 80px var(--primary),
+    0 0 90px var(--primary),
+    0 0 100px var(--primary),
+    0 0 150px var(--primary);
+}

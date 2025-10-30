@@ -4,7 +4,7 @@ import BigSlide from './BigSlide'
 
 const About = () => {
   return (
-    <section className={`${styles.about}`}>
+    <section className={`${styles.about}`} id='about'>
 
       <div>
         <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>

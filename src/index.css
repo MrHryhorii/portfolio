@@ -135,7 +135,7 @@ section{
   padding: var(--section-padding);
 }
 
-
+/* Blobs */
 .blob-container {
     position: fixed;
     inset: 0;
@@ -185,3 +185,9 @@ section{
     transform: translate(-50%, -50%);
     background: radial-gradient(circle, #ff3cac, transparent 30%);
 }
+
+/* Navigation */
+#about, #projects, #contact {
+    scroll-margin-top: 50px;
+}
+
