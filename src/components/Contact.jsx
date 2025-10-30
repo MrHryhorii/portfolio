@@ -10,7 +10,7 @@ const Contact = () => {
 
   // Build subject from name
   const subject = name ? `Message from ${name}` : "Message from portfolio";
-  const href = createMailToLink(["example@example.com"], { subject, body: msg });
+  const href = createMailToLink(["grigory.tchuprina@gmail.com"], { subject, body: msg });
 
   // Block empty messages
   const onSubmit = (e) => {
