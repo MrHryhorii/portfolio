@@ -1,0 +1,38 @@
+.accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+}
+
+.contentContainer {
+  overflow-y: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.contentInner {
+  padding: 0 1rem 1rem 1rem;
+}

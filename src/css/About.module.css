@@ -1,4 +1,4 @@
-.about{
+.about, .aboutMe, .accordions{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -6,6 +6,27 @@
   gap: var(--card-grid-gap-articles);
 
   border-style: solid;
+}
+
+.about{
+  flex-direction: column;
+}
+
+.aboutMe, .accordions{
+  border-width: 0px;
+}
+
+.accordions{
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.accordion{
+  list-style: none;
+  width: 300px;
+  flex-grow: 1;
 }
 
 .aabb1{

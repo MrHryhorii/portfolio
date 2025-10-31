@@ -12,11 +12,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
     "@slalombuild/react-mailto": "^0.2.7",
     "react": "^19.1.1",
     "react-awesome-reveal": "^4.3.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

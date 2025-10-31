@@ -12,7 +12,6 @@ const Navbar = ({scrollToId}) => {
             <a href="#" onClick={(e) => { e.preventDefault(); scrollToId('about'); }}><p>About</p></a>
             <a href="#" onClick={(e) => { e.preventDefault(); scrollToId('projects'); }}><p>Projects</p></a>
             <a href="#" onClick={(e) => { e.preventDefault(); scrollToId('contact'); }}><p>Contact</p></a>
-            <p>Skills</p>
         </div>
     </nav>
   )
