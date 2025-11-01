@@ -5,19 +5,28 @@
 }
 
 .item {
-  border-bottom: 1px solid #e2e8f0;
-  background-color: #ffffff;
+  /*border-bottom: 1px solid var(--subtext);*/
+  background-color: none;
+  color: var(--subtext);
+  font-size: var(--body-font);
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
-  font-weight: 500;
+  font-weight: var(--font-weight);
+  font-size: var(--small-font);
+  color: var(--primary);
   cursor: pointer;
   width: 100%;
   text-align: left;
+}
+
+.header:hover{
+  text-shadow:
+    0 0 2px var(--primary);
 }
 
 .icon {

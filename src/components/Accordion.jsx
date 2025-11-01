@@ -24,7 +24,34 @@ export const AccordianItem = ({ children, value, trigger, ...props }) => {
   const { selected, setSelected } = useContext(AccordianContext)
   const open = selected === value
 
-  const ref = useRef(null)
+  const contentRef = useRef(null)
+  const containerRef = useRef(null)
+
+  const [height, setHeight] = useState(open ? contentRef.current?.offsetHeight || 0 : 0);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (open && contentRef.current) {
+        setHeight(contentRef.current.offsetHeight);
+      } else if (!open) {
+        setHeight(0);
+      }
+    };
+
+    updateHeight();
+
+    const resizeObserver = new ResizeObserver(updateHeight);
+    if (contentRef.current) {
+      resizeObserver.observe(contentRef.current);
+    }
+
+    window.addEventListener('resize', updateHeight);
+
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener('resize', updateHeight);
+    };
+  }, [open]);
 
   return (
     <li className={styles.item} {...props}>
@@ -40,10 +67,11 @@ export const AccordianItem = ({ children, value, trigger, ...props }) => {
         />
       </header>
       <div
+        ref={containerRef}
         className={styles.contentContainer}
-        style={{ height: open ? ref.current?.offsetHeight || 0 : 0 }}
+        style={{ height: `${height}px` }} 
       >
-        <div className={styles.contentInner} ref={ref}>
+        <div className={styles.contentInner} ref={contentRef}>
           {children}
         </div>
       </div>
