@@ -2,6 +2,7 @@
   width: 400px;
   height: 200px;
   background-color: var(--border);
+  max-width: 100%;
 }
 
 .projects, .project2, .project3{
@@ -23,6 +24,20 @@
   border-style: solid;
 
   overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.flexGrow{
+  width: 500px;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.flexNoGrow{
+  flex-grow: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 
 .projectList{

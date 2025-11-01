@@ -12,6 +12,23 @@
   flex-direction: column;
 }
 
+.flexGrow{
+  width: 500px;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.flexNoGrow{
+  flex-grow: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+.aboutMe{
+  width: 100%;
+  flex-wrap: wrap-reverse;
+}
+
 .aboutMe, .accordions{
   border-width: 0px;
 }

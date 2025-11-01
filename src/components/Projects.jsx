@@ -8,10 +8,10 @@ const Projects = () => {
     <section className={`${styles.projects}`}>
       <h2>Projects</h2>
       <div className={`${styles.projectsFlex}`}>
-        <div>
+        <div className={`${styles.flexNoGrow}`}>
           <div className={`${styles.aabb2}`}></div>
         </div>
-        <div>
+        <div className={`${styles.flexGrow}`}>
           <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article className={`${styles.card}`}>
               <h3>Health Fusion</h3>
@@ -32,7 +32,7 @@ const Projects = () => {
 
     <section className={`${styles.project2}`}>
       <div className={`${styles.projectsFlex}`}>
-        <div>
+        <div className={`${styles.flexGrow}`}>
           <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article className={`${styles.card}`}>
               <h3>Covid-19 Discord Bot</h3>
@@ -43,7 +43,7 @@ const Projects = () => {
             </article>
           </BigSlide>
         </div>
-        <div>
+        <div className={`${styles.flexNoGrow}`}>
           <div className={`${styles.aabb2}`}></div>
         </div>
       </div> 
@@ -52,10 +52,10 @@ const Projects = () => {
 
     <section className={`${styles.project3}`}>
       <div className={`${styles.projectsFlex}`}>
-        <div>
+        <div className={`${styles.flexNoGrow}`}>
           <div className={`${styles.aabb2}`}></div>
         </div>
-        <div>
+        <div className={`${styles.flexGrow}`}>
           <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article className={`${styles.card}`}>
               <h3>Flavour Flow</h3>

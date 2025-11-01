@@ -8,7 +8,7 @@ const About = () => {
     <section className={`${styles.about}`} id='about'>
 
       <div className={`${styles.aboutMe}`}>
-        <div>
+        <div className={`${styles.flexGrow}`}>
           <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
           <article className={`${styles.content}`}>
             <h2>About Me</h2>
@@ -22,7 +22,7 @@ const About = () => {
           </article>
           </BigSlide>
         </div>
-        <div>
+        <div className={`${styles.flexNoGrow}`}>
           <div className={`${styles.aabb1}`}></div>
         </div>
       </div>
