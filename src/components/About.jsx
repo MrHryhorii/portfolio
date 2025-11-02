@@ -3,6 +3,8 @@ import styles from '../css/About.module.css';
 import BigSlide from './BigSlide'
 import { Accordian, AccordianItem } from './Accordion.jsx';
 
+import logo from '../assets/tsubaki.svg'
+
 import Skills from './Skills.jsx';
 
 const About = () => {
@@ -51,7 +53,8 @@ const About = () => {
           </BigSlide>
         </div>
         <div className={`${styles.flexNoGrow}`}>
-          <div className={`${styles.aabb1}`}></div>
+          {/*<div className={`${styles.aabb1}`}></div>*/}
+          <img className={`${styles.logo}`} src={logo} alt="me" />
         </div>
       </div>
 

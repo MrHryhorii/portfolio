@@ -52,6 +52,11 @@
   background-color: var(--border);
 }
 
+.logo{
+  width: 200px;
+  height: 200px;
+}
+
 .content{
   display: flex;
   flex-direction: column;
