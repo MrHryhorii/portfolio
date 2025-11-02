@@ -2,6 +2,10 @@ import React from 'react'
 import styles from '../css/Projects.module.css';
 import BigSlide from './BigSlide'
 
+import arimg from '../assets/2.png'
+import renpyimg from '../assets/renpy.avif'
+import esp32img from '../assets/esp32s3.jpg'
+
 const Projects = () => {
   return (
     <div className={`${styles.projectList}`} id="projects">
@@ -9,7 +13,13 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className={`${styles.projectsFlex}`}>
         <div className={`${styles.flexNoGrow}`}>
-          <div className={`${styles.aabb2}`}></div>
+          <div className={`${styles.aabb2}`}>
+            <img 
+              src={arimg}
+              alt="AR Scene Interposition Engine"
+              className={`${styles.projectImage}`} 
+            />
+          </div>
         </div>
         <div className={`${styles.flexGrow}`}>
           <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
@@ -70,7 +80,13 @@ const Projects = () => {
           </BigSlide>
         </div>
         <div className={`${styles.flexNoGrow}`}>
-          <div className={`${styles.aabb2}`}></div>
+          <div className={`${styles.aabb2}`}>
+            <img 
+              src={renpyimg}
+              alt="SOWRL"
+              className={`${styles.projectImage}`} 
+            />
+          </div>
         </div>
       </div> 
 
@@ -79,7 +95,13 @@ const Projects = () => {
     <section className={`${styles.project3}`}>
       <div className={`${styles.projectsFlex}`}>
         <div className={`${styles.flexNoGrow}`}>
-          <div className={`${styles.aabb2}`}></div>
+          <div className={`${styles.aabb2}`}>
+            <img 
+              src={esp32img}
+              alt="Esp32-S3"
+              className={`${styles.projectImage}`} 
+            />
+          </div>
         </div>
         <div className={`${styles.flexGrow}`}>
           <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
