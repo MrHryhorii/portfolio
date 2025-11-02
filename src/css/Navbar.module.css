@@ -67,8 +67,8 @@ a:hover {
 }
 
 .logoImg{
-  width: 20px;
-  height: 20px;
+  width: var(--body-font);
+  height: var(--body-font);
 }
 
 .logoImg:hover {
