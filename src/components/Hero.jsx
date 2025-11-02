@@ -19,12 +19,12 @@ const Hero = () => {
 
       <div className={`${styles.heroText}`}>
         <p>Hi, my name is</p>
-        <h1>Jack Parsons.</h1>
-        <p>I like to code.</p>
+        <h1>Hryhorii Chupryna.</h1>
+        <p>I build robust, unique software solutions.</p>
         <div className={`${styles.heroHl}`}></div>
-        <p>Computer Science</p>
-        <p>Student</p>
-      </div>
+        <p>Software Engineer</p>
+        <p>Full-Stack Development</p>
+    </div>
 
       <div className={`${styles.heroScrollbox}`}>
         <BigSlide dir="down" distance={650} duration={3000} cascade damping={0.14} triggerOnce>
