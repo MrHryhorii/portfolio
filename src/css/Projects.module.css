@@ -40,6 +40,16 @@
   max-width: 100%;
 }
 
+.projectLink{
+  text-decoration: none;
+  width: fit-content;
+}
+
+.projectLink p{
+  width: fit-content;
+  color: var(--primary);
+}
+
 .projectList{
   background-color: var(--surface);
   max-width: 1200px;
@@ -96,6 +106,11 @@ span{
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.tags .csharp{
+  border-color: rgb(35, 145, 32);
+  background-color: rgba(36, 145, 32, 0.392);
 }
 
 .projects, .project2{

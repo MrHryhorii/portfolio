@@ -14,15 +14,24 @@ const Projects = () => {
         <div className={`${styles.flexGrow}`}>
           <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article className={`${styles.card}`}>
-              <h3>Health Fusion</h3>
-              <p>A mobile app built to help manage life.
-                Allows users to manage all of their medications,
-                with an enjoyable calendar view is available for all users so they can view
-                their medication historyfrom the past or look to the future and see what they need to take.
-                Finally, users are also given a map view so that they have no problem finding any nearby pharmacies
-                or hostiptals if needed.</p>
-              <div className={`${styles.tags}`}><span>Python</span><span>Discord API</span><span>Johns Hopkins API</span></div>
-              <p>Source Code</p>
+              <h3>AR Scene Interposition Engine: Realistic Visual Blending</h3>
+              <p>A research-driven mobile application designed to achieve <b><i>unprecedented visual realism</i></b> in Augmented Reality (AR). 
+                The main breakthrough is making virtual objects, like a 3D building, <b><i>look like they truly belong</i></b> in the real world. This means if a real tree or building stands in front of the virtual object, the virtual object is correctly hidden (occluded). This challenging effect is achieved by merging precise data from the device’s GPS, compass, and internal sensors with specialized graphical techniques. 
+                The project showcases high proficiency in <b><i>mobile development</i></b>, <b><i>sensor integration</i></b>, and advanced <b><i>visual rendering</i></b> for a seamless user experience across iOS and Android.</p>
+              <div className={`${styles.tags}`}>
+                <span>Unity</span>
+                <span className={`${styles.csharp}`}>C#</span>
+                <span>Augmented Reality (AR)</span>
+                <span>GPS / Geolocation</span>
+              </div>
+              <a 
+                  className={`${styles.projectLink}`}
+                  href="https://github.com/MrHryhorii/AR-GPS-Compass-AO" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                <p>Source Code</p>
+              </a>
             </article>
           </BigSlide>
         </div>
