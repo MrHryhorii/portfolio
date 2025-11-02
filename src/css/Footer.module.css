@@ -34,3 +34,21 @@
   height: 21px;
   background-color: var(--border);
 }
+
+.icon{
+  color: var(--border);
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 0 transparent;
+  transition: scale 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.icon:hover {
+  scale: 1.5;
+  box-shadow:
+    0 0 2px var(--primary),
+    0 0 4px var(--primary),
+    0 0 8px var(--primary);
+}
