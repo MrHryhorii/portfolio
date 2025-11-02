@@ -30,7 +30,7 @@ const Projects = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                <p>Source Code</p>
+                  <p>Source Code</p>
               </a>
             </article>
           </BigSlide>
@@ -44,11 +44,28 @@ const Projects = () => {
         <div className={`${styles.flexGrow}`}>
           <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article className={`${styles.card}`}>
-              <h3>Covid-19 Discord Bot</h3>
-              <p>A hackathon project for HackED 2021. Using a variety of commands you can retrieve different
-                Covid-19 data including cases, test, and vaccines.</p>
-              <div className={`${styles.tags}`}><span>Python</span><span>Discord API</span><span>Johns Hopkins API</span></div>
-              <p>Source Code</p>
+              <h3>SOWRL: Non-Linear Narrative Framework for Ren'Py</h3>
+              <p>A powerful <b><i>Python extension</i></b> that transforms the Ren'Py engine into a <b><i>semi-open world</i></b> platform. 
+                Instead of strictly linear paths, SOWRL provides a robust <b><i>MVC architecture</i></b> that separates narrative data 
+                from game logic, allowing players to freely explore locations and choose the order in which they pursue 
+                storylines. This approach dramatically simplifies development, enabling designers to focus on content. 
+                The project demonstrates advanced skills in <b><i>architecture design</i></b>, <b><i>Python tool creation</i></b>, and engineering 
+                a complex, <b><i>reusable framework</i></b> for large-scale content management.
+              </p>
+              <div className={`${styles.tags}`}>
+                <span>Python</span>
+                <span className={`${styles.renpy}`}>Ren'Py Engine</span>
+                <span>MVC Architecture</span>
+                <span>Framework Design</span>
+              </div>
+              <a 
+                  className={`${styles.projectLink}`}
+                  href="https://github.com/MrHryhorii/SOWRL" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <p>Source Code</p>
+              </a>
             </article>
           </BigSlide>
         </div>
