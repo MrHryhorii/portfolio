@@ -15,11 +15,37 @@ const About = () => {
           <article className={`${styles.content}`}>
             <h2>About Me</h2>
             <div>
-              <p>👋 Hello My name is Jack Parsons and I am a fourth-year Computer Science Student attending the University of Alberta.</p>
-              <p>🏢 I have previously interned at Okta this past summer, and at Psystem the previous summer. With roles as a Software Engineer and a Fullstack Developer respectively.</p>
-              <p>🏎️ This year I am co-leading the University of Alberta Formula Racing club's new Autonomous Driving Subsystem from the ground up.</p>
-              <p>💥Currently, I am very interested in, and learning about compilers, autonomous driving, and deep learning.</p>
-              <p>You can reach out to me on my contact page</p>
+                <p>
+                    My journey into development began in childhood with an unusual NES clone equipped with a mouse and 
+                    keyboard—a setup that instantly sparked my interest in <b><i>low-level mechanics</i></b> and <b><i>system building</i></b> 
+                    using tools like Basic. This early curiosity evolved from playing games to analyzing them: 
+                    I loved studying bot behavior and creating custom competitive maps, where success depended on understanding 
+                    the system from the inside out.
+                </p>
+                <p>
+                    This investigative mindset accelerated around 2012 when I gained full access to my own laptop. 
+                    I quickly moved from high-level tools like Game Maker to deeply exploring <b><i>algorithms, C#, 
+                    and Visual Studio</i></b>. This led me to develop my own programs, from simple custom browsers to 
+                    client applications with database access, solidifying my skills in <b><i>architectural design</i></b> and 
+                    <b><i>full-stack logic</i></b>.
+                </p>
+                <p>
+                    A recurring theme in my career is <b><i>rapid adaptation</i></b>. I often dive into a subject, master 
+                    the core challenges, and then move on to the next unique problem. This drive for <b><i>novelty and complexity</i></b> 
+                    is demonstrated in my diverse project portfolio, ranging from <b><i>embedded C++ systems (IoT)</i></b> and 
+                    <b><i>algorithmic image processing</i></b> to creating my own <b><i>frameworks (SOWRL)</i></b> and exploring 
+                    <b><i>Augmented Reality (AR)</i></b>.
+                </p>
+                <p>
+                    Having successfully completed my university degree to formalize my knowledge, 
+                    I am now a versatile developer who thrives on learning and applying new technologies. 
+                    I specialize in building <b><i>robust, full-stack solutions</i></b> and excel at tackling 
+                    <b><i>unique technical challenges</i></b> that require out-of-the-box thinking. I am always seeking 
+                    the next complex project to contribute my skills.
+                </p>
+                <p>
+                    Let's discuss your next challenging project—reach out below!
+                </p>
             </div>
           </article>
           </BigSlide>

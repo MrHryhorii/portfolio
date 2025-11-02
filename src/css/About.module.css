@@ -57,3 +57,11 @@
   flex-direction: column;
   gap: var(--hero-gap);
 }
+
+.content p {
+  margin-bottom: 1.5rem; /* Або 1rem, 20px, 1.2em — на ваш смак */
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
