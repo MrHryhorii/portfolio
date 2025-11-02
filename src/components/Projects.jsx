@@ -84,14 +84,30 @@ const Projects = () => {
         <div className={`${styles.flexGrow}`}>
           <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
             <article className={`${styles.card}`}>
-              <h3>Flavour Flow</h3>
-              <p>A hackathon project for Hack The North 2021.
-                Allows users to enter ingredients and get recipes.
-                The recipe generator maximizes given ingredients and minimizes any missing ingredients,
-                using the Spoonacular API.
+              <h3>Sketch Phototrap: Automated IoT Camera System</h3>
+              <p>A full <b><i>Internet of Things (IoT) project</i></b> developed on the <b><i>Arduino platform</i></b> using <b><i>C++</i></b>. 
+                The system functions as an automated camera trap, utilizing <b><i>Computer Vision techniques</i></b> to 
+                detect movement. Instead of a simple hardware sensor, motion is identified by 
+                <b><i>analyzing and comparing sequential camera frames</i></b>, looking for significant pixel changes. 
+                This algorithmic approach required sophisticated <b><i>C++ programming</i></b> to manage limited hardware 
+                resources and achieve <b><i>low-latency detection</i></b>. The project demonstrates unique expertise in 
+                <b><i>embedded C++ programming</i></b>, <b><i>low-level image processing</i></b>, and the ability to combine software 
+                logic with custom electronics design.
               </p>
-              <div className={`${styles.tags}`}><span>Python</span><span>Discord API</span><span>Johns Hopkins API</span></div>
-              <p>Source Code</p>
+              <div className={`${styles.tags}`}>
+                <span>Arduino / Microcontrollers</span>
+                <span className={`${styles.cpp}`}>C++</span>
+                <span>Image Processing / Vision</span>
+                <span>IoT / Embedded Programming</span>
+              </div>
+              <a 
+                  className={`${styles.projectLink}`}
+                  href="https://github.com/MrHryhorii/sketch_phototrap" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+              >
+                  <p>Source Code</p>
+              </a>
             </article>
           </BigSlide>
         </div>

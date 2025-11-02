@@ -118,6 +118,11 @@ span{
   background-color: rgba(255, 127, 127, 0.392);
 }
 
+.tags .cpp{
+  border-color: rgb(0, 89, 156);
+  background-color: rgba(0, 89, 156, 0.392);
+}
+
 .projects, .project2{
   padding-bottom: clamp(0rem, calc(0rem + ((100vw - 500px)/10) * 0.2), 1.5625rem); /* 0 - 25px */
 }
