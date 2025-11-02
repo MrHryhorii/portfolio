@@ -3,6 +3,8 @@ import styles from '../css/About.module.css';
 import BigSlide from './BigSlide'
 import { Accordian, AccordianItem } from './Accordion.jsx';
 
+import Skills from './Skills.jsx';
+
 const About = () => {
   return (
     <section className={`${styles.about}`} id='about'>
@@ -30,13 +32,7 @@ const About = () => {
       <div className={`${styles.accordions}`}>
         <Accordian className={`${styles.accordion}`}>
           <AccordianItem value='1' trigger='I have experience with'>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <Skills></Skills>
           </AccordianItem>
         </Accordian>
       </div>
