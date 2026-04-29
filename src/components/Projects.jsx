@@ -5,6 +5,8 @@ import BigSlide from './BigSlide'
 import arimg from '../assets/2.png'
 import renpyimg from '../assets/renpy.avif'
 import esp32img from '../assets/esp32s3.jpg'
+import tsubakiimg from '../assets/tsubaki-tts.png'
+import phongimg from '../assets/phongimg.png'
 
 const Projects = () => {
   return (
@@ -136,6 +138,95 @@ const Projects = () => {
       </div> 
 
     </section>
+
+    <section className={`${styles.project2}`}>
+      <div className={`${styles.projectsFlex}`}>
+        <div className={`${styles.flexGrow}`}>
+          <BigSlide dir="left" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
+            <article className={`${styles.card}`}>
+              <h3>Tsubaki TTS Engine: Lightweight AI Voice Server</h3>
+              <p>A production-grade, <b><i>plug-and-play Text-to-Speech server</i></b> built entirely in <b><i>C# (.NET 8)</i></b>. 
+                Designed to solve the "dependency hell" of traditional Python/CUDA setups, Tsubaki uses <b><i>ONNX Runtime</i></b> 
+                to deliver fast, local AI inference across any hardware. It features <b><i>zero-shot voice cloning</i></b>, 
+                real-time studio <b><i>DSP effects</i></b> (like room reverb and bitcrushing), and a built-in "City Pop Night" web dashboard. 
+                By providing a true drop-in <b><i>OpenAI API replacement</i></b>, it seamlessly integrates with frontend 
+                clients like SillyTavern without eating up valuable GPU VRAM.
+              </p>
+              <div className={`${styles.tags}`}>
+                <span className={`${styles.csharp}`}>C# / .NET 8</span>
+                <span>ONNX Runtime</span>
+                <span>OpenAI API</span>
+                <span>Voice Cloning</span>
+              </div>
+              <a 
+                  className={`${styles.projectLink}`}
+                  href="https://github.com/MrHryhorii/SmartStack/tree/main/ONNX_Runner" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <p>Source Code</p>
+              </a>
+            </article>
+          </BigSlide>
+        </div>
+        <div className={`${styles.flexNoGrow}`}>
+          <div className={`${styles.aabb2}`}>
+            <img 
+              src={tsubakiimg}
+              alt="Tsubaki TTS Engine"
+              className={`${styles.projectImage}`} 
+            />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section className={`${styles.project3}`}>
+      <div className={`${styles.projectsFlex}`}>
+        <div className={`${styles.flexNoGrow}`}>
+          <div className={`${styles.aabb2}`}>
+            <img 
+              src={phongimg}
+              alt="Phong Palette Generator"
+              className={`${styles.projectImage}`} 
+            />
+          </div>
+        </div>
+        <div className={`${styles.flexGrow}`}>
+          <BigSlide dir="right" distance={150} duration={2000} cascade damping={0.14} triggerOnce={false} fraction={0}>
+            <article className={`${styles.card}`}>
+              <h3>Phong: Advanced Color Theory Palette Generator</h3>
+              <p>A sophisticated palette generation tool that moves beyond random selection by strictly adhering to <b><i>color theory</i></b>. 
+                Phong incorporates simplified but mathematically accurate <b><i>physico-optical material properties</i></b> and <b><i>artistic shifting</i></b> 
+                to create visually cohesive palettes. Users can specify desired dimensions, extract and <b><i>quantize colors</i></b> directly from 
+                existing images, or let the engine intelligently fill in missing theoretical hues based on known image colors. 
+                To ensure real-world viability, the software includes algorithms to <b><i>apply generated palettes directly onto images</i></b> 
+                for style testing. Palettes can be seamlessly exported to all popular formats for use in professional graphic editors.
+              </p>
+              <div className={`${styles.tags}`}>
+                <span>Color Theory & Optics</span>
+                <span>Image Processing</span>
+                <span>Color Quantization</span>
+                <span>Algorithms</span>
+              </div>
+              
+              {/* Tag for private repository */}
+              <div 
+                  className={`${styles.projectLink}`} 
+                  style={{ cursor: 'help' }}
+                  title="The source code is proprietary, but I would be happy to provide a live demonstration of the software and discuss its architecture during our interview."
+              >
+                  <p>🔒 Closed Source (Demo Available)</p>
+              </div>
+
+            </article>
+          </BigSlide>
+        </div>
+      </div> 
+
+    </section>
+
     </div>
   )
 }
