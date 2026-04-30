@@ -47,6 +47,9 @@ import {
     FaRecycle, // DRY
     FaMagic, // KISS
     FaHeart, // LÖVE2D
+    FaWindows, // Windows
+    FaInternetExplorer, // Internet Explorer
+    FaMicrochip // DirectML / Hardware
     } from 'react-icons/fa'; // Font Awesome (Fa)
 import {
     FcPicture,
@@ -60,6 +63,21 @@ import {
 import {
     VscVscode,
     } from 'react-icons/vsc';
+
+import { 
+    SiOnnx, 
+    SiOpenai,
+    SiDocker,
+    SiPostman,
+    SiStackoverflow,
+    SiNotepadplusplus
+} from 'react-icons/si';
+import { 
+    FaMicrophoneAlt, 
+    FaBrain, 
+    FaSlidersH,
+    FaCoffee
+} from 'react-icons/fa';
 
 
 const Skills = () => {
@@ -307,6 +325,12 @@ const Skills = () => {
                     <p>VS Code</p>
                 </div>
 
+                {/* Windows */}
+                <div style={{ textAlign: 'center' }}>
+                    <FaWindows size={iconSize} color="#0078D6" />
+                    <p>Windows</p>
+                </div>
+
                 {/* ==================================== */}
                 {/* 6. PRINCIPLES */}
                 {/* ==================================== */}
@@ -385,6 +409,76 @@ const Skills = () => {
                 <div style={{ textAlign: 'center' }}>
                     <SiLibreoffice size={iconSize} color="#18A303" />
                     <p>LibreOffice</p>
+                </div>
+
+                {/* ==================================== */}
+                {/* 8. AI & AUDIO */}
+                {/* ==================================== */}
+
+                <div style={{ textAlign: 'center' }}>
+                    <SiOnnx size={iconSize} color="#005CED" />
+                    <p>ONNX</p>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                    <FaMicrophoneAlt size={iconSize} color="#FF9800" />
+                    <p>Piper TTS</p>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                    <FaBrain size={iconSize} color="#E91E63" />
+                    <p>OpenVoice</p>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                    <SiOpenai size={iconSize} color="#10A37F" />
+                    <p>OpenAI API</p>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                    <FaSlidersH size={iconSize} color="#4CAF50" />
+                    <p>DSP</p>
+                </div>
+                {/* DirectML */}
+                <div style={{ textAlign: 'center' }}>
+                    <FaMicrochip size={iconSize} color="#32A629" />
+                    <p>DirectML</p>
+                </div>
+
+                {/* ==================================== */}
+                {/* 9. ESSENTIALS & DEV LIFE */}
+                {/* ==================================== */}
+
+                {/* Docker */}
+                <div style={{ textAlign: 'center' }}>
+                    <SiDocker size={iconSize} color="#2496ED" />
+                    <p>Docker</p>
+                </div>
+
+                {/* Postman */}
+                <div style={{ textAlign: 'center' }}>
+                    <SiPostman size={iconSize} color="#FF6C37" />
+                    <p>Postman</p>
+                </div>
+
+                {/* Notepad++ */}
+                <div style={{ textAlign: 'center' }}>
+                    <SiNotepadplusplus size={iconSize} color="#90E59A" />
+                    <p>Notepad++</p>
+                </div>
+
+                {/* Stack Overflow */}
+                <div style={{ textAlign: 'center' }}>
+                    <SiStackoverflow size={iconSize} color="#F58025" />
+                    <p>Stack Overflow</p>
+                </div>
+
+                {/* Coffee (transforms energy into code)*/}
+                <div style={{ textAlign: 'center' }}>
+                    <FaCoffee size={iconSize} color="#6F4E37" />
+                    <p>Coffee</p>
+                </div>
+
+                {/* Internet Explorer */}
+                <div style={{ textAlign: 'center' }}>
+                    <FaInternetExplorer size={iconSize} color="#0076D6" />
+                    <p>IE</p>
                 </div>
                 
             </div>

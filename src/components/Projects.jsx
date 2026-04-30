@@ -201,7 +201,7 @@ const Projects = () => {
                 Phong incorporates simplified but mathematically accurate <b><i>physico-optical material properties</i></b> and <b><i>artistic shifting</i></b> 
                 to create visually cohesive palettes. Users can specify desired dimensions, extract and <b><i>quantize colors</i></b> directly from 
                 existing images, or let the engine intelligently fill in missing theoretical hues based on known image colors. 
-                To ensure real-world viability, the software includes algorithms to <b><i>apply generated palettes directly onto images</i></b> 
+                To ensure real-world viability, the software includes algorithms to <b><i>apply generated palettes directly onto images </i></b> 
                 for style testing. Palettes can be seamlessly exported to all popular formats for use in professional graphic editors.
               </p>
               <div className={`${styles.tags}`}>
